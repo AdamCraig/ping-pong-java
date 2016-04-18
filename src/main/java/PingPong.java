@@ -8,6 +8,8 @@ public class PingPong {
     for (Integer index = 1 ; index <= number ; index++) {
       if (index % 3 == 0) {
         countingUp.add("ping");
+      } else if (index % 5 == 0) {
+        countingUp.add("pong");
       } else {
         countingUp.add(index);
       }
