@@ -7,9 +7,10 @@ public class PingPongTest {
   @Test
   public void pingPong_countUpToGivenNumber_Array() {
     PingPong testPingPong = new PingPong();
-    ArrayList<Integer> expected = new ArrayList<Integer>();
+    ArrayList<Object> expected = new ArrayList<Object>();
     expected.add(1);
     expected.add(2);
-    assertEquals(expected, testPingPong.pingPong(2));
+    expected.add("ping");
+    assertEquals(expected, testPingPong.pingPong(3));
     }
   }

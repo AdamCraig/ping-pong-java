@@ -6,7 +6,11 @@ public class PingPong {
   public ArrayList<Object> pingPong(Integer number) {
     ArrayList<Object> countingUp = new ArrayList<Object>();
     for (Integer index = 1 ; index <= number ; index++) {
-      countingUp.add(index);
+      if (index % 3 == 0) {
+        countingUp.add("ping");
+      } else {
+        countingUp.add(index);
+      }
     } return countingUp;
   }
 
