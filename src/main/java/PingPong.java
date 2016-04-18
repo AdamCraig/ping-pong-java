@@ -6,7 +6,9 @@ public class PingPong {
   public ArrayList<Object> pingPong(Integer number) {
     ArrayList<Object> countingUp = new ArrayList<Object>();
     for (Integer index = 1 ; index <= number ; index++) {
-      if (index % 3 == 0) {
+      if (index % 15 == 0) {
+        countingUp.add("pingpong");
+      } else if (index % 3 == 0) {
         countingUp.add("ping");
       } else if (index % 5 == 0) {
         countingUp.add("pong");
